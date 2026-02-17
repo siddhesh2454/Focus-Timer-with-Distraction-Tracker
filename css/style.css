@@ -310,3 +310,13 @@ main {
         height: 25vh;
     }
 }
+@media (hover: none) {
+    #pomodoro:hover,
+    #customize:hover,
+    .distraction-btns button:hover,
+    #startbtn:hover,
+    #pausebtn:hover,
+    #resetbtn:hover {
+        background-color: white;
+    }
+}
