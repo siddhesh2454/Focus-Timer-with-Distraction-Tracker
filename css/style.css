@@ -320,3 +320,8 @@ main {
         background-color: white;
     }
 }
+
+button {
+    color: #323232;
+    -webkit-tap-highlight-color: transparent;
+}
