@@ -183,7 +183,7 @@ document.addEventListener("visibilitychange", () => {
 // Add event listener to pomodoro button
 pomodoroBtn.addEventListener("click", () => {
     mode = "pomodoro"
-    pomodoroBtn.style.background = "grey"
+    pomodoroBtn.style.background = "#c2bcbc"
     customizeBtn.style.background = "white"
     initialSeconds = 1500;
     grabStart.style.visibility = "visible"
@@ -197,7 +197,7 @@ pomodoroBtn.addEventListener("click", () => {
 // Add event listener to customize button
 customizeBtn.addEventListener("click", () => {
     mode = "customize"
-    customizeBtn.style.background = "grey"
+    customizeBtn.style.background = "#c2bcbc"
     pomodoroBtn.style.background = "white"
     customTimeContainer.style.visibility = "visible"
 })
@@ -230,12 +230,12 @@ if (savedMode) {
     mode = savedMode
     console.log(savedMode)
     if (mode === "pomodoro") {
-        pomodoroBtn.style.background = "grey"
+        pomodoroBtn.style.background = "#c2bcbc"
         customTimeContainer.style.visibility = "hidden"
         initialSeconds = 1500;
     } else {
         customTimeContainer.style.visibility = "hidden"
-        customizeBtn.style.background = "grey";
+        customizeBtn.style.background = "#c2bcbc";
     }
 }
 
