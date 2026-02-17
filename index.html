@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+
+            <img src="img/timer.svg" alt="">
+            <div class="title">
+                <h2>Focus Timer with Distraction Tracker</h2>
+                <p> ---Your sole friend to track your Focus</p>
+            </div>
+
+        </header>
+        <main>
+
+            <div class="timer-controls">
+                <div class="modeSelector-btns">
+                    <button id="pomodoro">Pomodoro</button>
+                    <button id="customize">Customize</button>
+                </div>
+                <div class="customTimeContainer">
+                    <input type="minutes" placeholder="Enter minutes">
+                    <button id="ok">OK</button>
+                </div>
+                <div> Time to focus ...</div>
+                <p id="time">25 : 00</p>
+                <div class="timer-btn">
+                    <button id="startbtn"><img class="invert" src="img/start.svg" alt="">Start</button>
+                    <button id="pausebtn"><img class="invert" src="img/pause.svg" alt="">Pause</button>
+                    <button id="resetbtn"><img src="img/reset.svg" alt="">Reset</button>
+                </div>
+            </div>
+            <div class="progress-ring">
+                <div class="progress-ring-info">
+                    <p>Progress loading …Stay focused!</p>
+                </div>
+                
+                <svg width="160" height="160" viewBox="0 0 160 160">
+                    <!-- Background circle -->
+                    <circle cx="80" cy="80" r="70" stroke="#7e7d7d" stroke-width="10" fill="none" />
+                        
+                    <!-- Progress circle (this will animate) -->
+                    <circle id="progressCircle" cx="80" cy="80" r="70" stroke="#272727" stroke-width="10" fill="none"
+                        stroke-linecap="round" />
+                </svg>
+                <p id="progressCircle-percentage">0%</p>
+
+            </div>
+        </main>
+
+        <div class="distraction-summary">
+            <section class="distraction">
+
+                <h3>Track Distractions</h3>
+                <p>Every distraction counts — be honest, log it.</p>
+
+                <div class="distraction-btns">
+                    <button data-type="instagram">Instagram</button>
+                    <button data-type="youtube">YouTube</button>
+                    <button data-type="phone">Phone</button>
+                    <button data-type="other">Other</button>
+                </div>
+            </section>
+            <section id="summary">
+                <h3>Summary</h3>
+                <p>No distractions yet. Stay focused 💪
+</p>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
