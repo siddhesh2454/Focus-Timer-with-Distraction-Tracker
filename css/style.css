@@ -135,6 +135,9 @@ main {
     flex-direction: row;
 }
 
+#startbtn img, #pausebtn img{
+    filter: invert(1);
+}
 #startbtn:hover,
 #pausebtn:hover,
 #resetbtn:hover {
